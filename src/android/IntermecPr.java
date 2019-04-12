@@ -7,6 +7,29 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import honeywell.connection.ConnectionBase;
+import honeywell.connection.Connection_Bluetooth;
+import honeywell.connection.Connection_TCP;
+import honeywell.printer.DocumentDPL;
+import honeywell.printer.DocumentDPL.*;
+import honeywell.printer.DocumentEZ;
+import honeywell.printer.DocumentLP;
+import honeywell.printer.DocumentExPCL_LP;
+import honeywell.printer.DocumentExPCL_PP;
+import honeywell.printer.DocumentExPCL_PP.*;
+import honeywell.printer.ParametersDPL;
+import honeywell.printer.ParametersDPL.*;
+import honeywell.printer.ParametersEZ;
+import honeywell.printer.ParametersExPCL_LP;
+import honeywell.printer.ParametersExPCL_LP.*;
+import honeywell.printer.ParametersExPCL_PP;
+import honeywell.printer.ParametersExPCL_PP.*;
+import honeywell.printer.UPSMessage;
+import honeywell.printer.configuration.dpl.*;
+import honeywell.printer.configuration.ez.*;
+import honeywell.printer.configuration.expcl.*;
+
+
 /**
  * This class echoes a string called from JavaScript.
  */
