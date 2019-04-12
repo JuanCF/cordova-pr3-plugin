@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-intermecpr" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>IntermecPr</name>
+  <js-module name="IntermecPr" src="www/IntermecPr.js">
+    <clobbers target="cordova.plugins.IntermecPr" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="IntermecPr">
+        <param name="android-package" value="cordova-plugin-intermecpr.IntermecPr" />
+      </feature>
+    </config-file>
+    <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
+    <resource-file src="extraLibs/DO_AndroidSDK_v2.4.9.aar" target="libs/DO_AndroidSDK_v2.4.9.aar" />
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/IntermecPr.java" target-dir="src/cordova-plugin-intermecpr/IntermecPr" />
+  </platform>
+</plugin>

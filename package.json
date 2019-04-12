@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-intermecpr",
+  "version": "0.1.0",
+  "description": "Cordova plugin for Intermec PR3 Printer",
+  "cordova": {
+    "id": "cordova-plugin-intermecpr",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Juan Carlos Flores",
+  "license": "ISC"
+}

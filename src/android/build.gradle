@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+    flatDir {
+       dirs 'libs'
+    }
+}
+
+dependencies {
+    compile(name: 'DO_AndroidSDK_v2.4.9', ext: 'aar')
+}
+
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
