@@ -10,6 +10,9 @@
         <param name="android-package" value="com.honeywell.intermec.IntermecPr" />
       </feature>
     </config-file>
+    <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+      <manifest xmlns:tools="http://schemas.android.com/tools" />
+    </edit-config>
     <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
       <application tools:replace="icon, label" />
     </edit-config>
