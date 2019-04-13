@@ -1,17 +1,42 @@
 {
-  "name": "cordova-plugin-intermecpr",
-  "version": "0.1.0",
-  "description": "Cordova plugin for Intermec PR3 Printer",
+  "_from": "git+https://github.com/JuanCF/cordova-pr3-plugin.git",
+  "_id": "cordova-plugin-intermecpr@0.1.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-intermecpr",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/JuanCF/cordova-pr3-plugin",
+    "rawSpec": "https://github.com/JuanCF/cordova-pr3-plugin",
+    "saveSpec": "git+https://github.com/JuanCF/cordova-pr3-plugin.git",
+    "fetchSpec": "https://github.com/JuanCF/cordova-pr3-plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/JuanCF/cordova-pr3-plugin.git#b3c72892043dde7417855f92e0490a1bc5e0b002",
+  "_spec": "https://github.com/JuanCF/cordova-pr3-plugin",
+  "_where": "/home/juan/Documents/pr3test",
+  "author": {
+    "name": "Juan Carlos Flores"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-intermecpr",
     "platforms": [
       "android"
     ]
   },
+  "deprecated": false,
+  "description": "Cordova plugin for Intermec PR3 Printer",
   "keywords": [
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Juan Carlos Flores",
-  "license": "ISC"
+  "license": "ISC",
+  "name": "cordova-plugin-intermecpr",
+  "version": "0.1.0"
 }
