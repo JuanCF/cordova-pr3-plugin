@@ -7,7 +7,7 @@
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="IntermecPr">
-        <param name="android-package" value="cordova-plugin-intermecpr.IntermecPr" />
+        <param name="android-package" value="com.honeywell.intermec.IntermecPr" />
       </feature>
     </config-file>
     <framework custom="true" src="src/android/build.gradle" type="gradleReference" />

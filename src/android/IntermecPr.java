@@ -1,4 +1,4 @@
-package cordova-plugin-intermecpr;
+package com.honeywell.intermec;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
