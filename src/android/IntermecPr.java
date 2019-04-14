@@ -7,6 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 import honeywell.connection.ConnectionBase;
 import honeywell.connection.Connection_Bluetooth;
 import honeywell.connection.Connection_TCP;
@@ -29,6 +31,7 @@ import honeywell.printer.configuration.dpl.*;
 import honeywell.printer.configuration.ez.*;
 import honeywell.printer.configuration.expcl.*;
 
+private static final String TAG = "IntermecPR3";
 
 /**
  * This class echoes a string called from JavaScript.
@@ -50,6 +53,17 @@ public class IntermecPr extends CordovaPlugin {
             callbackContext.success(message);
         } else {
             callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+  
+    @Override
+    public void run() {
+        try {
+            Log.i(TAG,"Thread is active!");
+            Thread.sleep(2000);
+        }
+        catch(Exception e) {
+            Log.e(TAG,e);
         }
     }
 }
