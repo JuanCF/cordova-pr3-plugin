@@ -8,5 +8,5 @@ repositories {
 }
 
 dependencies {
-    compile(name: 'DO_AndroidSDK_v2.4.9', ext: 'aar')
+    implementation(name: 'DO_AndroidSDK_v2.4.9', ext: 'aar')
 }
